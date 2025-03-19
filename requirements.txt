@@ -1,0 +1,7 @@
+black
+mypy
+flask
+Flask-SQLAlchemy
+jinja2
+mysql-connector-python
+
