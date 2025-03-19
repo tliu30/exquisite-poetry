@@ -1,5 +1,4 @@
-black
-mypy
+ruff
 flask
 Flask-SQLAlchemy
 jinja2
