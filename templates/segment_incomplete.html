@@ -4,13 +4,18 @@
 
 {% block content %}
 <div>
-    Hello world! Start page babyyyy.
+    Hey! You've been invited to add to a poem!
+    <br/><br/>
+    ...
+    <br/>
+    {{ hint }}
     <form method=post>
     <dl>
         {{ render_field(form.text) }}
-        {{ render_field(form.num_segments) }}
         {{ render_field(form.your_email) }}
-        {{ render_field(form.next_email) }}
+        {% if not is_last_segment %}
+            {{ render_field(form.next_email) }}
+        {% endif %}
     </dl>
     <p><input type=submit value=Create>
     </form>

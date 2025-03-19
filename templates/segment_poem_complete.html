@@ -1,0 +1,11 @@
+{% extends "base_template.html" %}
+
+{% from "_formhelpers.html" import render_field %}
+
+{% block content %}
+<div>
+    Wow! See your beautiful completed poem here:
+    <br/><br/>
+    <div style="white-space: pre;">{{ text }}</div>
+</div>
+{% endblock content %}

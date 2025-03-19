@@ -1,6 +1,6 @@
-ruff
-flask
 Flask-SQLAlchemy
+flask
+flask-migrate
+Flask-WTF
 jinja2
-mysql-connector-python
-
+ruff
